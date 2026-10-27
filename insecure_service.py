@@ -51,6 +51,6 @@ def admin():
 
 if __name__ == "__main__":
     # debug is off, but the auth logic is the point — an unauthenticated GET
-    # /admin returns the admin panel because the error path fails open.
-    # Port 8090 (not 7000: macOS ControlCenter/AirPlay squats 7000).
-    app.run(host="0.0.0.0", port=8090, debug=False)
+    # Lab-only: Docker requires binding to all container interfaces.
+# Host access is restricted to localhost through Docker Compose.
+    app.run(host="0.0.0.0", port=8090, debug=False)  # nosemgrep

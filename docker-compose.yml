@@ -5,7 +5,7 @@ services:
     volumes:
       - ./:/lab
     ports:
-      - "8090:8090"
+      - "127.0.0.1:8090:8090"
     # Per-student flag: python3 ../../instructor/seed_flags.py env <STUDENT_ID> > .env
     environment:
       - FLAG_DEVSECOPS
@@ -20,7 +20,7 @@ services:
     volumes:
       - ./:/lab
     ports:
-      - "8091:8091"
+      - "127.0.0.1:8091:8091"
     # Per-student flag: python3 ../../instructor/seed_flags.py env <STUDENT_ID> > .env
     environment:
       - FLAG_DEVSECOPS

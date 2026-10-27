@@ -77,5 +77,6 @@ def admin():
 
 
 if __name__ == "__main__":
-    # Port 8091 (pairs with the insecure service on 8090).
-    app.run(host="0.0.0.0", port=8091, debug=False)
+    # Lab-only: Docker requires binding to all container interfaces.
+# Host access is restricted to localhost through Docker Compose.
+    app.run(host="0.0.0.0", port=8091, debug=False)  # nosemgrep

@@ -1,0 +1,9 @@
+# Week 15 DevSecOps Lab - Reviewed false positives
+# alice-token is a public teaching credential, not a production secret.
+# Rule: curl-auth-header
+
+8cf0746b1bef2c9f5412a0be701254a2f27cf84a:README-pipeline.md:curl-auth-header:91
+8cf0746b1bef2c9f5412a0be701254a2f27cf84a:WEEK15_LAB_REPORT.md:curl-auth-header:59
+8cf0746b1bef2c9f5412a0be701254a2f27cf84a:WEEK15_LAB_REPORT.md:curl-auth-header:84
+8cf0746b1bef2c9f5412a0be701254a2f27cf84a:WEEK15_LAB_REPORT.md:curl-auth-header:129
+8cf0746b1bef2c9f5412a0be701254a2f27cf84a:WEEK15_LAB_REPORT.md:curl-auth-header:149
